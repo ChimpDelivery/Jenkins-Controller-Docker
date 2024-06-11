@@ -1,0 +1,64 @@
+jenkins:
+  disableRememberMe: true
+  noUsageStatistics: true
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+       - id: ${JENKINS_ADMIN_ID}
+         password: ${JENKINS_ADMIN_PASSWORD}
+  authorizationStrategy:
+    globalMatrix:
+      entries:
+        - group:
+            name: authenticated
+            permissions:
+              - Agent/Build
+              - Agent/Configure
+              - Agent/Connect
+              - Agent/Create
+              - Agent/Delete
+              - Agent/Disconnect
+              - Credentials/Create
+              - Credentials/Delete
+              - Credentials/ManageDomains
+              - Credentials/Update
+              - Credentials/View
+              - Job/Build
+              - Job/Cancel
+              - Job/Configure
+              - Job/Create
+              - Job/Delete
+              - Job/Discover
+              - Job/Move
+              - Job/Read
+              - Job/Workspace
+              - Overall/Administer
+              - Overall/Read
+              - Run/Delete
+              - Run/Replay
+              - Run/Update
+              - View/Configure
+              - View/Create
+              - View/Delete
+              - View/Read
+        - user:
+            name: anonymous
+            permissions:
+              - Overall/Read
+unclassified:
+  location:
+    url: ${JENKINS_URL}
+  scmGit:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: true
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+appearance:
+  themeManager:
+    theme: "dark"
+jobs:
+  - file: /usr/local/job_seed.groovy

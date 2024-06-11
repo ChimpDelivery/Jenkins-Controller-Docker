@@ -1,0 +1,12 @@
+authorize-project:latest
+configuration-as-code:latest
+credentials-binding:latest
+discord-notifier:latest
+dark-theme:latest
+embeddable-build-status:latest
+github-branch-source:latest
+job-dsl:latest
+mailer:latest
+matrix-auth:latest
+pipeline-stage-view:latest
+remote-file:latest
