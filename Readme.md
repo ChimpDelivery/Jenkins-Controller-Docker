@@ -1,3 +1,5 @@
+[![Docker Image CI](https://github.com/ChimpDelivery/Jenkins-Controller-Docker/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/ChimpDelivery/Jenkins-Controller-Docker/actions/workflows/docker-image.yml)
+
 ## About
 
 Includes a pre-configured Jenkins Docker image and settings for local development.
