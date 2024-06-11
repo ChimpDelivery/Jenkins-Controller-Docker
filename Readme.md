@@ -14,9 +14,10 @@ docker compose down
 - password: `chimp`
 
 ## References
+- [Jenkins - Docker][1]
+- [Jenkins - CASC][2]
+- [Jenkins - Matrix-Auth CASC Syntax][3]
 
-- [Jenkins - casc][1]
-- [Jenkins - matrix-auth casc syntax][2]
-
-[1]: https://github.com/jenkinsci/configuration-as-code-plugin
-[2]: https://github.com/jenkinsci/matrix-auth-plugin/blob/master/src/test/resources/org/jenkinsci/plugins/matrixauth/integrations/casc/configuration-as-code-v3.yml
+[1]: https://github.com/jenkinsci/docker
+[2]: https://github.com/jenkinsci/configuration-as-code-plugin
+[3]: https://github.com/jenkinsci/matrix-auth-plugin/blob/master/src/test/resources/org/jenkinsci/plugins/matrixauth/integrations/casc/configuration-as-code-v3.yml
