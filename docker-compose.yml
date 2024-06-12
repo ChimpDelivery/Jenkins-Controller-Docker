@@ -9,6 +9,7 @@ services:
       JENKINS_URL: "http://127.0.0.1:8080/"
       JENKINS_ADMIN_ID: chimp
       JENKINS_ADMIN_PASSWORD: chimp
+      JENKINS_ADMIN_EMAIL: chimp@example.com
     ports:
       - 8080:8080
     volumes:

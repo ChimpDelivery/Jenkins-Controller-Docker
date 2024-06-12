@@ -48,6 +48,7 @@ jenkins:
               - Job/ViewStatus
 unclassified:
   location:
+    adminAddress: ${JENKINS_ADMIN_EMAIL}
     url: ${JENKINS_URL}
   scmGit:
     addGitTagAction: false
