@@ -1,4 +1,7 @@
 jenkins:
+  markupFormatter:
+    rawHtml:
+      disableSyntaxHighlighting: true
   disableRememberMe: true
   noUsageStatistics: true
   securityRealm:
