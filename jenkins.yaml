@@ -45,7 +45,7 @@ jenkins:
         - user:
             name: anonymous
             permissions:
-              - Overall/Read
+              - Job/ViewStatus
 unclassified:
   location:
     url: ${JENKINS_URL}
