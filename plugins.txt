@@ -10,3 +10,4 @@ mailer:latest
 matrix-auth:latest
 pipeline-stage-view:latest
 remote-file:latest
+timestamper:latest
